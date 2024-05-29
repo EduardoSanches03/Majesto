@@ -5,17 +5,21 @@
 }
 
 #majesto_text {
-  width: 900px;
-  height: 850px;
+  width: 780px;
+  height: 900px;
   z-index: 0;
 }
 #box_shadow {
-    position: absolute;
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7092086834733893) 85%);
+  position: absolute;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.7092086834733893) 90%
+  );
   z-index: 1;
   width: 900px;
-  height: 850px;
+  height: 1000px;
   top: 0;
 }
 
@@ -24,30 +28,30 @@
 }
 
 #statue {
-  width: 1100px;
-  height: 900px;
+  width: 1200px;
+  height: 950px;
   position: absolute;
   z-index: 2;
-  left: 380px;
-  top: 16px;
+  left: 200px;
+  top: 0;
 }
 
 #glitch_statue {
   position: absolute;
-  width: 1000px;
-  height: 900px;
+  width: 1200px;
+  height: 950px;
   top: 10px;
-  left: 420px;
+  left: 195px;
   z-index: 1;
   animation: glitchMove 1s infinite;
 }
 
 #glitch_statue_top {
   position: absolute;
-  width: 1000px;
-  height: 900px;
+  width: 1200px;
+  height: 950px;
   top: 10px;
-  left: 420px;
+  left: 190px;
   z-index: 3;
   --x-offset: 3;
   --y-offset: 2;
@@ -56,16 +60,16 @@
 
 #logo_menu {
   position: absolute;
-  width: 300px;
-  height: 300px;
+  width: 330px;
+  height: 330px;
   z-index: 1;
 }
 
 #menu_text {
   position: absolute;
   border-radius: 50%;
-  width: 280px;
-  height: 280px;
+  width: 310px;
+  height: 310px;
   margin-right: 10px;
   margin-top: 10px;
   z-index: 1;
