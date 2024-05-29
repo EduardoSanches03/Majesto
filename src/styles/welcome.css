@@ -1,0 +1,187 @@
+#welcome {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+#majesto_text {
+  width: 900px;
+  height: 850px;
+  z-index: 0;
+}
+#box_shadow {
+    position: absolute;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7092086834733893) 85%);
+  z-index: 1;
+  width: 900px;
+  height: 850px;
+  top: 0;
+}
+
+#div_majesto_statue {
+  position: absolute;
+}
+
+#statue {
+  width: 1100px;
+  height: 900px;
+  position: absolute;
+  z-index: 2;
+  left: 380px;
+  top: 16px;
+}
+
+#glitch_statue {
+  position: absolute;
+  width: 1000px;
+  height: 900px;
+  top: 10px;
+  left: 420px;
+  z-index: 1;
+  animation: glitchMove 1s infinite;
+}
+
+#glitch_statue_top {
+  position: absolute;
+  width: 1000px;
+  height: 900px;
+  top: 10px;
+  left: 420px;
+  z-index: 3;
+  --x-offset: 3;
+  --y-offset: 2;
+  animation: glitchFlash 2s infinite, glitchMoveBrusque 0.5s infinite;
+}
+
+#logo_menu {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  z-index: 1;
+}
+
+#menu_text {
+  position: absolute;
+  border-radius: 50%;
+  width: 280px;
+  height: 280px;
+  margin-right: 10px;
+  margin-top: 10px;
+  z-index: 1;
+  animation: rotateMenuText 10s infinite linear;
+  overflow: hidden;
+}
+
+#logo_menu,
+#menu_text {
+  top: -20px;
+  right: -10px;
+}
+
+#btn-menu2 {
+  cursor: pointer;
+}
+
+/* Keyframes para o efeito de glitch sutil */
+@keyframes glitchMove {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  10%,
+  30% {
+    transform: translate(-1px, -0.5px);
+  }
+  20%,
+  40% {
+    transform: translate(1px, -0.5px);
+  }
+  50%,
+  70% {
+    transform: translate(-0.5px, 0.5px);
+  }
+  60%,
+  80% {
+    transform: translate(0.5px, 0.5px);
+  }
+  90% {
+    transform: translate(0.25px, -0.25px);
+  }
+}
+
+/* Keyframes para o efeito de glitch e movimento */
+@keyframes glitchFlash {
+  0%,
+  19%,
+  21%,
+  39%,
+  41%,
+  59%,
+  61%,
+  79%,
+  81%,
+  99% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    opacity: 0;
+    transform: translateX(calc(var(--x-offset) * 1px));
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    opacity: 0;
+    transform: translateX(calc(var(--y-offset) * 1px));
+  }
+  29%,
+  49%,
+  69%,
+  89% {
+    opacity: 0;
+    transform: translateX(calc((var(--x-offset) + var(--y-offset)) * 1px));
+  }
+}
+
+/* Keyframes para o efeito de glitch brusco */
+@keyframes glitchMoveBrusque {
+  0% {
+    transform: translate(0, 0);
+  }
+  15% {
+    transform: translate(5px, -3px);
+  }
+  30% {
+    transform: translate(-5px, 3px);
+  }
+  45% {
+    transform: translate(3px, 2px);
+  }
+  60% {
+    transform: translate(-3px, -2px);
+  }
+  75% {
+    transform: translate(2px, -5px);
+  }
+  90% {
+    transform: translate(-2px, 5px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes rotateMenuText {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
