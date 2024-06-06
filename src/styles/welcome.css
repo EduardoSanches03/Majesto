@@ -5,10 +5,11 @@
 }
 
 #majesto_text {
-  width: 780px;
-  height: 900px;
+  width: 720px;
+  height: 950px;
   z-index: 0;
 }
+
 #box_shadow {
   position: absolute;
   background: rgb(0, 0, 0);
@@ -43,7 +44,6 @@
   top: 10px;
   left: 195px;
   z-index: 1;
-  animation: glitchMove 1s infinite;
 }
 
 #glitch_statue_top {
@@ -55,14 +55,18 @@
   z-index: 3;
   --x-offset: 3;
   --y-offset: 2;
-  animation: glitchFlash 2s infinite, glitchMoveBrusque 0.5s infinite;
 }
 
-#logo_menu {
+#glitch_statue_top,
+#glitch_statue,
+#statue {
+  pointer-events: none;
+}
+
+#logo {
   position: absolute;
   width: 330px;
   height: 330px;
-  z-index: 1;
 }
 
 #menu_text {
@@ -72,120 +76,47 @@
   height: 310px;
   margin-right: 10px;
   margin-top: 10px;
-  z-index: 1;
-  animation: rotateMenuText 10s infinite linear;
   overflow: hidden;
 }
 
-#logo_menu,
+#logo,
 #menu_text {
+  z-index: 0;
   top: -20px;
   right: -10px;
 }
 
-#btn-menu2 {
+#logo_menu {
   cursor: pointer;
 }
 
-/* Keyframes para o efeito de glitch sutil */
-@keyframes glitchMove {
-  0%,
-  100% {
-    transform: translate(0, 0);
-  }
-  10%,
-  30% {
-    transform: translate(-1px, -0.5px);
-  }
-  20%,
-  40% {
-    transform: translate(1px, -0.5px);
-  }
-  50%,
-  70% {
-    transform: translate(-0.5px, 0.5px);
-  }
-  60%,
-  80% {
-    transform: translate(0.5px, 0.5px);
-  }
-  90% {
-    transform: translate(0.25px, -0.25px);
-  }
+#menu_options {
+  position: absolute;
+  margin-top: 20px;
+  z-index: 5;
+  right: 50px;
+  top: 0;
 }
 
-/* Keyframes para o efeito de glitch e movimento */
-@keyframes glitchFlash {
-  0%,
-  19%,
-  21%,
-  39%,
-  41%,
-  59%,
-  61%,
-  79%,
-  81%,
-  99% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-  20%,
-  40%,
-  60%,
-  80% {
-    opacity: 0;
-    transform: translateX(calc(var(--x-offset) * 1px));
-  }
-  10%,
-  30%,
-  50%,
-  70%,
-  90% {
-    opacity: 0;
-    transform: translateX(calc(var(--y-offset) * 1px));
-  }
-  29%,
-  49%,
-  69%,
-  89% {
-    opacity: 0;
-    transform: translateX(calc((var(--x-offset) + var(--y-offset)) * 1px));
-  }
+#menu_options p {
+  font-size: 18px;
+  margin: 10px 0;
+  cursor: pointer;
+  color: white;
 }
 
-/* Keyframes para o efeito de glitch brusco */
-@keyframes glitchMoveBrusque {
-  0% {
-    transform: translate(0, 0);
-  }
-  15% {
-    transform: translate(5px, -3px);
-  }
-  30% {
-    transform: translate(-5px, 3px);
-  }
-  45% {
-    transform: translate(3px, 2px);
-  }
-  60% {
-    transform: translate(-3px, -2px);
-  }
-  75% {
-    transform: translate(2px, -5px);
-  }
-  90% {
-    transform: translate(-2px, 5px);
-  }
-  100% {
-    transform: translate(0, 0);
-  }
+#close_menu_options {
+  color: red;
+  cursor: pointer;
 }
 
-@keyframes rotateMenuText {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#menu_options p:hover {
+  font-size: 150%;
+  transition: 0.5s;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #a11e2f, 0 0 30px #a11e2f,
+    0 0 40px #a11e2f, 0 0 50px #a11e2f, 0 0 60px #a11e2f;
+}
+
+#home {
+  margin-left: 20px;
 }

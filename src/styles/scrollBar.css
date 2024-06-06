@@ -1,6 +1,6 @@
 /* Estilizando a barra de rolagem */
 ::-webkit-scrollbar {
-    width: 12px; /* Largura da barra de rolagem */
+    width: 10px; /* Largura da barra de rolagem */
   }
   
   /* Estilizando a trilha da barra de rolagem */
