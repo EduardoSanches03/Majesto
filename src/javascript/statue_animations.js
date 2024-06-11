@@ -6,8 +6,8 @@ function animateGlitch() {
   const glitchStatueTop = document.getElementById("glitch_statue_top");
 
   function glitchMove(timestamp) {
-    const x = Math.random() * 2 - 1;
-    const y = Math.random() * 1 - 0.5;
+    const x = Math.random() * 8 - 1;
+    const y = Math.random() * 4 - 0.5;
     glitchStatue.style.transform = `translate(${x}px, ${y}px)`;
 
     requestAnimationFrame(glitchMove);

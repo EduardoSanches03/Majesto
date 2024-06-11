@@ -42,7 +42,7 @@
   width: 1200px;
   height: 950px;
   top: 10px;
-  left: 195px;
+  left: 200px;
   z-index: 1;
 }
 
@@ -65,15 +65,15 @@
 
 #logo {
   position: absolute;
-  width: 330px;
-  height: 330px;
+  width: 360px;
+  height: 360px;
 }
 
 #menu_text {
   position: absolute;
   border-radius: 50%;
-  width: 310px;
-  height: 310px;
+  width: 340px;
+  height: 340px;
   margin-right: 10px;
   margin-top: 10px;
   overflow: hidden;
@@ -99,24 +99,77 @@
 }
 
 #menu_options p {
-  font-size: 18px;
+  font-size: 30px;
   margin: 10px 0;
   cursor: pointer;
   color: white;
+  position: absolute;
 }
 
-#close_menu_options {
-  color: red;
+#close_options_star {
+  width: 40px;
+  height: 40px;
   cursor: pointer;
 }
 
-#menu_options p:hover {
-  font-size: 150%;
-  transition: 0.5s;
-  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #a11e2f, 0 0 30px #a11e2f,
-    0 0 40px #a11e2f, 0 0 50px #a11e2f, 0 0 60px #a11e2f;
+/* Position each menu item */
+#home {
+  top: 0;
+  right: 340px;
+  animation: floatR 2s ease-in-out infinite;
+
 }
 
-#home {
-  margin-left: 20px;
+#about {
+  top: 55px;
+  right: 250px;
+  animation: floatL 2s ease-in-out infinite;
+}
+
+#customers {
+  top: 0;
+  right: 120px;
+  animation: floatL 1s ease-in-out infinite;
+}
+
+#services {
+  top: 55px;
+  right: 40px;
+  animation: floatL    2s ease-in-out infinite;
+}
+
+#contact {
+  top: 110px;
+  right: 0px;
+}
+
+#menu_options p:hover {
+  font-size: 200%;
+  transition: 0.5s;
+  text-shadow: 0 0 2px #a0a0a0, 0 0 4px #ad0a1f, 0 0 6px #ad0a1f,
+    0 0 8px #ad0a1f, 0 0 10px #ad0a1f, 0 0 12px #ad0a1f, 0 0 14px #ad0a1f;
+}
+
+@keyframes floatR {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes floatL {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
