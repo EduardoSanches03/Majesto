@@ -1,0 +1,23 @@
+#pg2 {
+  display: flex;
+  justify-content: center;
+}
+
+#logo_p2 {
+  margin-top: 100px;
+  z-index: 0;
+}
+
+#p2_text,
+#majesto_agency_text {
+  z-index: 1;
+}
+
+#p2_text {
+  position: absolute;
+}
+#majesto_agency_text {
+  position: absolute;
+  right: 50%;
+  top: 50%;
+}
