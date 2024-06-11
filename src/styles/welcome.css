@@ -20,7 +20,7 @@
   );
   z-index: 1;
   width: 900px;
-  height: 1000px;
+  height: 950px;
   top: 0;
 }
 
@@ -99,77 +99,98 @@
 }
 
 #menu_options p {
-  font-size: 30px;
-  margin: 10px 0;
+  font-size: 26px;
+  margin-top: -16px;
   cursor: pointer;
-  color: white;
-  position: absolute;
+  color: rgb(199, 197, 197);
+  transition: transform 0.5s;
 }
 
 #close_options_star {
   width: 40px;
   height: 40px;
   cursor: pointer;
-}
-
-/* Position each menu item */
-#home {
+  position: relative;
+  right: -140px;
   top: 0;
-  right: 340px;
-  animation: floatR 2s ease-in-out infinite;
-
-}
-
-#about {
-  top: 55px;
-  right: 250px;
-  animation: floatL 2s ease-in-out infinite;
-}
-
-#customers {
-  top: 0;
-  right: 120px;
-  animation: floatL 1s ease-in-out infinite;
-}
-
-#services {
-  top: 55px;
-  right: 40px;
-  animation: floatL    2s ease-in-out infinite;
-}
-
-#contact {
-  top: 110px;
-  right: 0px;
+  animation: pulse 1.2s linear infinite;
 }
 
 #menu_options p:hover {
-  font-size: 200%;
-  transition: 0.5s;
+  transform: scale(1.2);
   text-shadow: 0 0 2px #a0a0a0, 0 0 4px #ad0a1f, 0 0 6px #ad0a1f,
     0 0 8px #ad0a1f, 0 0 10px #ad0a1f, 0 0 12px #ad0a1f, 0 0 14px #ad0a1f;
 }
 
-@keyframes floatR {
+@keyframes pulse {
   0% {
-    transform: translateX(0);
+    opacity: 100;
   }
+
   50% {
-    transform: translateX(5px);
+    opacity: 0;
   }
+
   100% {
-    transform: translateX(0);
+    opacity: 100;
   }
 }
 
-@keyframes floatL {
-  0% {
-    transform: translateX(0);
+/* Animação de opacidade */
+@keyframes fadeOut {
+  from {
+    opacity: 1;
   }
-  50% {
-    transform: translateX(-5px);
+  to {
+    opacity: 0;
   }
-  100% {
-    transform: translateX(0);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-out {
+  animation: fadeOut 1s forwards; /* Ajuste a duração conforme necessário */
+}
+
+.fade-in {
+  animation: fadeIn 1s forwards; /* Ajuste a duração conforme necessário */
+}
+
+/* Animação de saída */
+@keyframes slideOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-100px); /* Sai para cima */
+  }
+}
+
+.slide-out {
+  animation: slideOut 1s forwards; /* Ajuste a duração conforme necessário */
+}
+
+/* Animação de entrada */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-100px); /* Vem de cima */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slide-in {
+  animation: slideIn 1s forwards; /* Ajuste a duração conforme necessário */
 }
