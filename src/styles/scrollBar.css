@@ -5,7 +5,7 @@
 
 /* Estilizando a trilha da barra de rolagem */
 ::-webkit-scrollbar-track {
-  background-color: #33333300; /* Cor de fundo da trilha */
+  background-color: #00000000; /* Cor de fundo da trilha */
 }
 
 /* Estilizando o indicador da barra de rolagem */

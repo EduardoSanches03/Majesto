@@ -1,23 +1,49 @@
 #pg2 {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  position: relative;
+  height: auto;
 }
 
 #logo_p2 {
   margin-top: 100px;
   z-index: 0;
+  max-width: 100%;
+  height: 1050px;
 }
 
 #p2_text,
 #majesto_agency_text {
   z-index: 1;
+  position: absolute;
 }
 
 #p2_text {
   position: absolute;
+  top: 60%; /* Coloca o elemento no meio verticalmente */
+  left: 50%; /* Coloca o elemento no meio horizontalmente */
+  transform: translate(-50%, -50%); /* Move o elemento de volta metade de sua própria largura e altura, para que o centro do elemento esteja no centro da tela */
+  text-align: center; /* Centraliza o texto horizontalmente */
+  width: 100%; /* Define a largura para ocupar toda a largura disponível */
 }
+
+#p2_text p {
+  font-size: 170px; /* Define o tamanho da fonte */
+  line-height: 1.2; /* Define o espaçamento entre as linhas */
+  margin: 0; /* Remove a margem padrão do parágrafo */
+}
+
+
 #majesto_agency_text {
-  position: absolute;
-  right: 50%;
-  top: 50%;
+  top: 32%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#majesto_agency_text img {
+  width: 130%;
+  height: auto;
 }

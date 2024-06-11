@@ -19,82 +19,91 @@
     <title>Majesto</title>
   </head>
   <body>
-    <section id="pg1">
-      <div id="welcome">
-        <div id="div_majesto_text">
-          <div id="box_shadow"></div>
+    <div class="container">
+      <section id="pg1">
+        <div id="welcome">
+          <div id="div_majesto_text">
+            <div id="box_shadow"></div>
+            <img
+              id="majesto_text"
+              src="src/images/majesto_home_texto.png"
+              alt="texto majesto"
+            />
+          </div>
+          <div id="div_majesto_statue">
+            <div>
+              <img
+                id="statue"
+                src="src/images/statue.png"
+                alt="estatua majesto"
+              />
+            </div>
+            <div>
+              <img
+                id="glitch_statue"
+                src="src/images/glitch_statue.png"
+                alt="glitch estatua"
+              />
+            </div>
+            <div>
+              <img
+                id="glitch_statue_top"
+                src="src/images/glitch_statue_top.png"
+                alt="glitch estatua superior"
+              />
+            </div>
+          </div>
+          <div id="menu">
+            <div id="logo_menu" onclick="abrirMenu()">
+              <img
+                id="logo"
+                src="src/images/logo_menu.png"
+                alt="logo do menu"
+              />
+              <img
+                id="menu_text"
+                src="src/images/menu_text.png"
+                alt="texto do menu giratorio"
+              />
+            </div>
+            <div id="menu_options" style="display: none">
+              <img
+                id="close_options_star"
+                src="src/images/star.png"
+                alt="estrelinha"
+                onclick="closeMenu()"
+              />
+              <p id="home">HOME</p>
+              <p id="about">SOBRE NÓS</p>
+              <p id="customers">CLIENTES</p>
+              <p id="services">SERVIÇOS</p>
+              <p id="contact">CONTATO</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="pg2">
+        <div>
           <img
-            id="majesto_text"
-            src="src/images/majesto_home_texto.png"
-            alt="texto majesto"
+            id="logo_p2"
+            src="src/images/background_logo_p2.png"
+            alt="Logo de fundo pg2"
           />
         </div>
-        <div id="div_majesto_statue">
-          <div>
-            <img
-              id="statue"
-              src="src/images/statue.png"
-              alt="estatua majesto"
-            />
+        <div>
+          <div id="p2_text">
+            <p>ELEVANDO O MARKETING DE FRANQUIAS</p>
           </div>
-          <div>
+          <div id="majesto_agency_text">
             <img
-              id="glitch_statue"
-              src="src/images/glitch_statue.png"
-              alt="glitch estatua"
-            />
-          </div>
-          <div>
-            <img
-              id="glitch_statue_top"
-              src="src/images/glitch_statue_top.png"
-              alt="glitch estatua superior"
+              src="src/images/majesto_agency_text.png"
+              alt="bloco de texto majesto agency"
             />
           </div>
         </div>
-        <div id="menu">
-          <div id="logo_menu" onclick="abrirMenu()">
-            <img id="logo" src="src/images/logo_menu.png" alt="logo do menu" />
-            <img
-              id="menu_text"
-              src="src/images/menu_text.png"
-              alt="texto do menu giratorio"
-            />
-          </div>
-          <div id="menu_options" style="display: none">
-            <img
-              id="close_options_star"
-              src="src/images/star.png"
-              alt="estrelinha"
-              onclick="closeMenu()"
-            />
-            <p id="home">HOME</p>
-            <p id="about">SOBRE NÓS</p>
-            <p id="customers">CLIENTES</p>
-            <p id="services">SERVIÇOS</p>
-            <p id="contact">CONTATO</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="pg2">
-      <div>
-        <img
-          id="logo_p2"
-          src="src/images/background_logo_p2.png"
-          alt="Logo de fundo pg2"
-        />
-      </div>
-      <div>
-        <div id="p2_text"><p>ELEVANDO O MARKETING DE FRANQUIAS</p></div>
-        <div id="majesto_agency_text">
-          <img
-            src="src/images/majesto_agency_text.png"
-            alt="bloco de texto majesto agency"
-          />
-        </div>
-      </div>
-    </section>
+      </section>
+      <section></section>
+    </div>
     <script src="src/javascript/index.js"></script>
     <script src="src/javascript/statue_animations.js"></script>
     <script src="src/javascript/menu_animations.js"></script>
