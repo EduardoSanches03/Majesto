@@ -1,4 +1,4 @@
-#pg2 {
+#section2 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,7 +22,7 @@
 
 #p2_text {
   position: absolute;
-  top: 60%; /* Coloca o elemento no meio verticalmente */
+  top: 56%; /* Coloca o elemento no meio verticalmente */
   left: 50%; /* Coloca o elemento no meio horizontalmente */
   transform: translate(-50%, -50%); /* Move o elemento de volta metade de sua própria largura e altura, para que o centro do elemento esteja no centro da tela */
   text-align: center; /* Centraliza o texto horizontalmente */
@@ -30,8 +30,8 @@
 }
 
 #p2_text p {
-  font-size: 170px; /* Define o tamanho da fonte */
-  line-height: 1.2; /* Define o espaçamento entre as linhas */
+  font-size: 160px; /* Define o tamanho da fonte */
+  line-height: 0.9; /* Define o espaçamento entre as linhas */
   margin: 0; /* Remove a margem padrão do parágrafo */
 }
 
