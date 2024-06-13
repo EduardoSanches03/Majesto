@@ -1,0 +1,61 @@
+@import url(home.css);
+
+#pg3 {
+  margin-top: 150px;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 300;
+  font-size: 26px;
+  color: white;
+}
+
+#slogan_div {
+  display: flex;
+  justify-content: center;
+}
+
+#background_temple {
+  width: 100%;
+}
+
+#pg3_slogan {
+  width: 1000px;
+  max-height: 100%;
+  margin-bottom: 20px;
+}
+
+#content {
+  position: absolute;
+  right: 4%;
+  bottom: 5%;
+}
+
+#text_line {
+  max-height: 100%;
+  width: 540px;
+}
+
+#text_star {
+  position: absolute;
+  max-height: 100%;
+  width: 40px;
+  right: 102%;
+  bottom: -9%;
+  animation: pulse 1.6s linear infinite;
+}
+
+.highlight {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 700;
+  font-variant: small-caps;
+}
+
+.red {
+  color: #a11e2f;
+}
+
+#content_2 {
+  position: absolute;
+  right: 4%;
+  bottom: 5%;
+  opacity: 0;   
+}
