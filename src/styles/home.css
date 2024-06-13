@@ -1,8 +1,12 @@
-.pg1 {
+/*home.css*/
+
+#pg1 {
   display: flex;
   position: relative;
   background-color: black;
   width: 100%;
+  font-family: "League Spartan ", sans-serif;
+  font-weight: 800;
 }
 
 #majesto_text {
@@ -25,9 +29,7 @@
   top: 0;
 }
 
-#div_majesto_statue {
-  position: absolute;
-}
+
 
 #statue {
   width: 1200px;

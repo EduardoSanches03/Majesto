@@ -1,10 +1,14 @@
-#section2 {
+/*second_page.css*/
+
+#pg2 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
   height: auto;
+  font-family: "League Spartan ", sans-serif;
+  font-weight: 900;
 }
 
 #logo_p2 {
