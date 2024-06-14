@@ -1,3 +1,4 @@
+/* third_page.css */
 @import url(home.css);
 
 #pg3 {
@@ -26,20 +27,20 @@
 
 #content {
   position: absolute;
-  right: 4%;
-  bottom: 5%;
+  left: 2%;
+  top: 42%;
 }
 
 #text_line {
   max-height: 100%;
-  width: 540px;
+  width: 520px;
 }
 
 #text_star {
   position: absolute;
   max-height: 100%;
   width: 40px;
-  right: 102%;
+  left: 102%;
   bottom: -9%;
   animation: pulse 1.6s linear infinite;
 }
@@ -57,6 +58,20 @@
 #content_2 {
   position: absolute;
   right: 4%;
-  bottom: 5%;
-  opacity: 0;   
+  bottom: 8%;
+  text-align: right;
+}
+
+#text_line2 {
+  max-height: 100%;
+  width: 520px;
+}
+
+#text_star2 {
+  position: absolute;
+  max-height: 100%;
+  width: 40px;
+  right: 102%;
+  bottom: -14%;
+  animation: pulse 1.6s linear infinite;
 }

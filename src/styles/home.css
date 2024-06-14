@@ -2,7 +2,6 @@
 
 #pg1 {
   display: flex;
-  position: relative;
   background-color: black;
   width: 100%;
   font-family: "League Spartan ", sans-serif;
@@ -103,7 +102,7 @@
 
 #menu_options p {
   font-size: 26px;
-  margin-top: -16px;
+  margin-top: -8px;
   cursor: pointer;
   color: rgb(199, 197, 197);
   transition: transform 0.5s;
