@@ -1,0 +1,42 @@
+#pg4 {
+  margin-top: -1vh;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 900;
+  background-color: black;
+  position: relative;
+}
+
+.image-text-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#angels_frame {
+  width: 100%;
+  z-index: 1;
+}
+
+.image-text-container p {
+  font-size: 200px;
+  color: #a11e2f;
+  z-index: 0;
+  position: absolute;
+  top: 46%;
+  left: 26vw;
+}
+
+/* Definindo o tamanho do número "9" */
+#angels_frame + p::first-letter {
+    font-size: 150%; /* Aumenta o tamanho do primeiro caractere */
+    margin-top: -0.1em; /* Ajuste conforme necessário */
+    float: left;
+
+}
+  
+  /* Reduzindo o espaçamento entre todos os caracteres */
+  #angels_frame + p {
+    letter-spacing: -8px; /* Diminui o espaçamento entre caracteres */
+  }
+  
