@@ -7,7 +7,6 @@
   font-weight: 300;
   font-size: 26px;
   color: white;
-  position: relative;
 }
 
 #slogan_div {
@@ -25,7 +24,7 @@
   margin-bottom: 20px;
 }
 
-#content {
+.content {
   position: absolute;
   left: 2%;
   top: 42%;
@@ -36,7 +35,7 @@
   width: 520px;
 }
 
-#text_star {
+.text_star {
   position: absolute;
   max-height: 100%;
   width: 40px;
@@ -44,6 +43,7 @@
   bottom: -9%;
   animation: pulse 1.6s linear infinite;
 }
+
 
 .highlight {
   font-family: "League Spartan", sans-serif;

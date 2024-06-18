@@ -8,10 +8,14 @@
   font-weight: 800;
 }
 
-#majesto_text {
+.majesto_text {
   width: 47vw;
   height: 138vh;
   z-index: 0;
+}
+
+#majesto_text{
+  visibility: hidden;
 }
 
 #box_shadow {

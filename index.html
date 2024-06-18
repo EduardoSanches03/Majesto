@@ -2,14 +2,11 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/styles/style.css" />
-    <link rel="stylesheet" href="src/styles/home.css" />
-    <link rel="stylesheet" href="src/styles/scrollBar.css" />
-    <link rel="stylesheet" href="src/styles/second_page.css" />
-    <link rel="stylesheet" href="src/styles/third_page.css" />
-    <link rel="stylesheet" href="src/styles/fourth_page.css" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      ScrollReveal.debug = true;
+    </script>
 
     <link
       rel="stylesheet"
@@ -18,23 +15,55 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles/style.css" />
+    <link rel="stylesheet" href="src/styles/home.css" />
+    <link rel="stylesheet" href="src/styles/scrollBar.css" />
+    <link rel="stylesheet" href="src/styles/second_page.css" />
+    <link rel="stylesheet" href="src/styles/third_page.css" />
+    <link rel="stylesheet" href="src/styles/fourth_page.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="icon" type="png" href="src/images/logo_menu_icon.png" />
 
     <title>Majesto</title>
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
   </head>
   <body>
     <section id="pg1" class="section">
       <div class="container">
+        <nav>
+          <div id="menu">
+            <div id="logo_menu" onclick="abrirMenu()">
+              <img
+                id="logo"
+                src="src/images/logo_menu.png"
+                alt="logo do menu"
+              />
+              <img
+                id="menu_text"
+                src="src/images/menu_text.png"
+                alt="texto do menu giratorio"
+              />
+            </div>
+            <div id="menu_options" style="display: none">
+              <img
+                id="close_options_star"
+                src="src/images/star.png"
+                alt="estrelinha"
+                onclick="closeMenu()"
+              />
+              <p id="home">HOME</p>
+              <p id="about">SOBRE NÓS</p>
+              <p id="customers">CLIENTES</p>
+              <p id="services">SERVIÇOS</p>
+              <p id="contact">CONTATO</p>
+            </div>
+          </div>
+        </nav>
         <div id="div_majesto_text">
           <div id="box_shadow"></div>
           <img
-            id="majesto_text"
+            class="majesto_text"
             src="src/images/majesto_home_texto.png"
             alt="texto majesto"
           />
@@ -60,29 +89,6 @@
               src="src/images/glitch_statue_top.png"
               alt="glitch estatua superior"
             />
-          </div>
-        </div>
-        <div id="menu">
-          <div id="logo_menu" onclick="abrirMenu()">
-            <img id="logo" src="src/images/logo_menu.png" alt="logo do menu" />
-            <img
-              id="menu_text"
-              src="src/images/menu_text.png"
-              alt="texto do menu giratorio"
-            />
-          </div>
-          <div id="menu_options" style="display: none">
-            <img
-              id="close_options_star"
-              src="src/images/star.png"
-              alt="estrelinha"
-              onclick="closeMenu()"
-            />
-            <p id="home">HOME</p>
-            <p id="about">SOBRE NÓS</p>
-            <p id="customers">CLIENTES</p>
-            <p id="services">SERVIÇOS</p>
-            <p id="contact">CONTATO</p>
           </div>
         </div>
       </div>
@@ -124,8 +130,8 @@
           />
         </div>
 
-        <div id="content">
-          <p>
+        <div class="content">
+          <p id="teste">
             Na <span class="highlight red">majesto</span>, não somos apenas uma
             agência de<br />
             marketing. Somos a síntese da
@@ -136,7 +142,7 @@
             <span class="highlight">grandeza, elegância e excelência.</span>
             <br />
           </p>
-          <img id="text_star" src="src/images/star.png" alt="estrelhinha" />
+          <img class="text_star" src="src/images/star.png" alt="estrelhinha" />
           <img
             id="text_line"
             src="src/images/line.png"
@@ -166,12 +172,11 @@
             src="src/images/angels_frame.png"
             alt="moldura anjos"
           />
-          <p>9 ANOS</p>
+          <p class="teste">9 ANOS</p>
         </div>
       </div>
     </section>
 
-  
     <script src="src/javascript/index.js"></script>
     <script src="src/javascript/statue_animations.js"></script>
     <script src="src/javascript/menu_animations.js"></script>

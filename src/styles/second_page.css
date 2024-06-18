@@ -9,7 +9,7 @@
   height: 150vh; /* Certifique-se de que a seção ocupe a altura total da tela */
   font-family: "League Spartan", sans-serif;
   font-weight: 900;
-  overflow: hidden; /* Evitar rolagem dentro da seção */
+  
 }
 
 #logo_p2 {
