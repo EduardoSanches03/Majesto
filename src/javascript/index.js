@@ -5,11 +5,8 @@ $(document).ready(function(){
     });
 });
 
-
-
-
 ScrollReveal().reveal("#majesto_text", {
-  duration: 2000,
-  distance: "400px",
-  origin: "left",
-});
+    duration: 2000,
+    distance: "400px",
+    origin: "left",
+  });
