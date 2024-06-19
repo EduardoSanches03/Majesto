@@ -6,6 +6,7 @@
   width: 100%;
   font-family: "League Spartan ", sans-serif;
   font-weight: 800;
+  height: 137.3vh;
 }
 
 .majesto_text {
@@ -24,13 +25,13 @@
   );
   z-index: 1;
   width: 54vw;
-  height: 138vh;
+  height: 137.3vh;
   top: 0;
 }
 
 #statue {
   width: 78vw;
-  height: 138vh;
+  height: 137.3vh;
   position: absolute;
   z-index: 2;
   left: 13vw;
@@ -40,7 +41,7 @@
 #glitch_statue {
   position: absolute;
   width: 78vw;
-  height: 138vh;
+  height: 137vh;
   top: 10px;
   left: 13vw;
   z-index: 1;
@@ -100,7 +101,7 @@
 
 #menu_options p {
   font-size: 26px;
-  margin-top: -8px;
+  margin-top: 10;
   cursor: pointer;
   color: rgb(199, 197, 197);
   transition: transform 0.5s;
@@ -171,19 +172,18 @@
   }
   to {
     opacity: 0;
-    transform: translateY(-100px); /* Sai para cima */
+    transform: translateY(-100px);
   }
 }
 
 .slide-out {
-  animation: slideOut 1s forwards; /* Ajuste a duração conforme necessário */
+  animation: slideOut 1s forwards;
 }
 
-/* Animação de entrada */
 @keyframes slideIn {
   from {
     opacity: 0;
-    transform: translateY(-100px); /* Vem de cima */
+    transform: translateY(-100px);
   }
   to {
     opacity: 1;
@@ -192,5 +192,5 @@
 }
 
 .slide-in {
-  animation: slideIn 1s forwards; /* Ajuste a duração conforme necessário */
+  animation: slideIn 1s forwards;
 }

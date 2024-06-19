@@ -27,16 +27,15 @@
   left: 26vw;
 }
 
-/* Definindo o tamanho do número "9" */
 #angels_frame + p::first-letter {
-    font-size: 150%; /* Aumenta o tamanho do primeiro caractere */
-    margin-top: -0.1em; /* Ajuste conforme necessário */
+    font-size: 150%; 
+    margin-top: -0.1em;
     float: left;
 
 }
   
-  /* Reduzindo o espaçamento entre todos os caracteres */
+
   #angels_frame + p {
-    letter-spacing: -8px; /* Diminui o espaçamento entre caracteres */
+    letter-spacing: -8px;
   }
   
