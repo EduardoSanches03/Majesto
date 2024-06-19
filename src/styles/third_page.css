@@ -30,36 +30,42 @@
   top: 42%;
 }
 
+.content :nth-child(1) {
+  transition-delay: 700ms;
+}
+
 #text_line {
   max-height: 100%;
   width: 520px;
 }
 
-.text_star {
+#text_star {
   position: absolute;
-  max-height: 100%;
+  height: 40px;
   width: 40px;
   left: 102%;
-  bottom: -9%;
+  bottom: -56%;
   animation: pulse 1.6s linear infinite;
 }
-
 
 .highlight {
   font-family: "League Spartan", sans-serif;
   font-weight: 700;
   font-variant: small-caps;
 }
-
 .red {
-  color: #a11e2f;
+  color: red;
 }
 
-#content_2 {
+.content_2 {
   position: absolute;
   right: 4%;
   bottom: 8%;
   text-align: right;
+}
+
+.content_2 :nth-child(1) {
+  transition-delay: 700ms;
 }
 
 #text_line2 {
@@ -69,9 +75,9 @@
 
 #text_star2 {
   position: absolute;
-  max-height: 100%;
+  height: 40px;
   width: 40px;
   right: 102%;
-  bottom: -14%;
+  bottom: -56%;
   animation: pulse 1.6s linear infinite;
 }
