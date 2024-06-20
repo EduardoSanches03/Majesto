@@ -24,7 +24,7 @@
 
 .text-container {
   position: absolute;
-  top: 52%;
+  top: 48%;
   left: 26vw;
   z-index: 0;
   font-size: 13vw;
@@ -53,7 +53,7 @@
   font-weight: 200;
   display: flex;
   justify-content: center; /* Centraliza horizontalmente */
-  transition-delay: 7.5s;
+  transition-delay: 6s;
 }
 
 .text-container2 p {
