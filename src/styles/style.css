@@ -29,39 +29,39 @@ body {
   opacity: 0;
   filter: blur(15px);
   transform: translateX(-100%);
-  transition: all 0.5s;
+  transition: all 1s;
 }
 .show {
   opacity: 1;
   filter: blur(0px);
   transform: translateX(0%);
-  transition: all 0.5s;
+  transition: all 1s;
 }
 
 .hiddenR {
   opacity: 0;
   filter: blur(15px);
   transform: translateX(100%);
-  transition: all 0.5s;
+  transition: all 1s;
 }
 .showR {
   opacity: 1;
   filter: blur(0px);
   transform: translateX(0%);
-  transition: all 0.5s;
+  transition: all 1s;
 }
 
 .hiddenU {
   opacity: 0;
   filter: blur(15px);
   transform: translateY(200px);
-  transition: all 0.5s;
+  transition: all 1s;
 }
 .showU {
   opacity: 1;
   filter: blur(0px);
   transform: translateY(0%);
-  transition: all 0.5s;
+  transition: all 1s;
 }
 
 .hiddenI {
@@ -80,13 +80,13 @@ body {
 
 .hiddenIn-Out-Up {
   opacity: 0;
-  transition: opacity 0.5s ease; /* Adicione uma transição para a propriedade opacity */
+  transition: opacity 1s ease; 
 }
 
 .showIn-Out-Up {
   opacity: 1;
-  transition: opacity 0.5s ease; /* Adicione uma transição para a propriedade opacity */
-  animation: move-to-top 3s 3s forwards; /* Aplica a animação move-to-top após 3 segundos */
+  transition: opacity 1.5s ease; 
+  animation: move-to-top 3s 3s forwards;
 }
 
 @keyframes move-to-top {
@@ -96,7 +96,7 @@ body {
   }
   100% {
     opacity: 1;
-    transform: translateY(-120%);
+    transform: translateY(-100%);
   }
 }
 
