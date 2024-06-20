@@ -63,3 +63,40 @@ body {
   transform: translateY(0%);
   transition: all 0.5s;
 }
+
+.hiddenI {
+  opacity: 0;
+  filter: blur(15px);
+  transform: translateY(4vh);
+  transition: all 3s;
+}
+
+.showI {
+  opacity: 1;
+  filter: blur(0px);
+  transform: translateY(0%);
+  transition: all 3s;
+}
+
+.hiddenIn-Out-Up {
+  opacity: 0;
+  transition: opacity 0.5s ease; /* Adicione uma transição para a propriedade opacity */
+}
+
+.showIn-Out-Up {
+  opacity: 1;
+  transition: opacity 0.5s ease; /* Adicione uma transição para a propriedade opacity */
+  animation: move-to-top 3s 3s forwards; /* Aplica a animação move-to-top após 3 segundos */
+}
+
+@keyframes move-to-top {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-120%);
+  }
+}
+
