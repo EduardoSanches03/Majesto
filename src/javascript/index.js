@@ -12,7 +12,6 @@ function travarRolagem() {
   }
   if (hiddenIElement2) {
     hiddenIElement2.classList.add("showIn-Out-Up");
-    
   }
 }
 
@@ -32,13 +31,15 @@ const myObserver = new IntersectionObserver(
         }
         if (entry.target.classList.contains("hiddenR")) {
           entry.target.classList.add("showR");
+        }if (entry.target.classList.contains("hiddenO")) {
+          entry.target.classList.add("showO");
         }
         if (
           entry.target.classList.contains("scroll_pause") &&
           !rolagemTravada
         ) {
           travarRolagem();
-          rolagemTravada = true; // Atualiza a flag para indicar que a rolagem foi travada
+          rolagemTravada = true;
           setTimeout(destravarRolagem, 3000);
         }
       }
@@ -48,7 +49,7 @@ const myObserver = new IntersectionObserver(
 
 // Seleciona todos os elementos que queremos observar
 const elements = document.querySelectorAll(
-  ".hidden, .hiddenI, .hiddenR, .hiddenU, .scroll_pause, .hiddenIn-Out-Up"
+  ".hidden, .hiddenI, .hiddenR, .hiddenU, .scroll_pause, .hiddenIn-Out-Up, .hiddenO"
 );
 
 // Adiciona os elementos ao observer

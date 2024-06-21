@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   let angle = 0;
 
   function rotate() {
-    angle = (angle + 0.5) % 360;
+    angle = (angle + 0.3) % 360;
     menuText.style.transform = `rotate(${angle}deg)`;
     requestAnimationFrame(rotate);
   }

@@ -44,7 +44,9 @@
 
 .scroll_pause {
   position: absolute;
-  bottom: 24%;
+  color: wheat;
+  bottom: 18%;
+  left: 50%;
 }
 
 .text-container2 {
@@ -52,24 +54,25 @@
   font-family: "League Spartan", sans-serif;
   font-weight: 200;
   display: flex;
-  justify-content: center; /* Centraliza horizontalmente */
-  transition-delay: 6s;
+  justify-content: center;
+  transition-delay: 6.5s;
 }
 
 .text-container2 p {
   font-size: 4vw;
-  text-align: center; /* Centraliza o texto */
+  text-align: center;
 }
 
 .after_animation {
   display: flex;
-  justify-content: center; /* Centraliza a div .after_animation horizontalmente */
-  align-items: center; /* Centraliza a div .after_animation verticalmente */
+  justify-content: center;
+  align-items: center;
   position: absolute;
   top: 56%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 70vw;
+  width: 100%;
+  height: 100%;
 }
 
 .background_logo_p4 {
@@ -80,5 +83,6 @@
   z-index: 0;
   max-width: 100%;
   height: 100%;
-  opacity: 0.2;
+  opacity: 0.4;
+  transition-delay: 3s;
 }
