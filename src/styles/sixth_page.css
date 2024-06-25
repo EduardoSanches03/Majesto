@@ -1,0 +1,162 @@
+#pg6 {
+  position: relative;
+  width: 100%;
+  height: 126vh;
+  background-color: black;
+  overflow: hidden;
+}
+
+#angels_frame_blue {
+  width: 100vw;
+  height: 126vh;
+}
+
+#cases {
+  position: absolute;
+  color: white;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 900;
+  font-size: 33rem;
+  margin-left: -2vw;
+}
+
+#asset-center {
+  position: absolute;
+  top: 64%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.stars-container {
+  position: absolute;
+  top: 77%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.lines-container-left,
+.lines-container-right {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 180px;
+}
+
+.lines-container-right {
+  margin-left: 50.8vw;
+}
+
+.lines {
+  width: 4px;
+  height: 400px;
+}
+
+#second,
+#fifth {
+  height: 250px;
+  margin-top: 40%;
+}
+
+#third,
+#fourth {
+  height: 70vh;
+  margin-bottom: 22%;
+}
+
+.stars {
+  width: 10vh;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#first-star {
+  left: 0.2vw;
+  bottom: 80vh;
+}
+
+#second-star {
+  left: 12.2vw;
+  bottom: 56vh;
+}
+
+#third-star {
+  bottom: 88vh;
+  left: 24vw;
+}
+
+#fourth-star {
+  bottom: 88vh;
+  left: 75.2vw;
+}
+
+#fifth-star {
+  left: 87.3vw;
+  bottom: 56vh;
+}
+
+#sixth-star {
+  bottom: 80vh;
+  left: 99.3vw;
+}
+
+.case-logo {
+  position: absolute;
+  width: 30vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform-style: preserve-3d;
+}
+
+.case-description {
+  position: absolute;
+  top: 84%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 600;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.case-name {
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "League Spartan", sans-serif;
+  font-weight: 200;
+  font-size: 2rem;
+  color: white;
+}
+
+.arrow-right {
+  position: absolute;
+  top: 84%;
+  left: 67.6%;
+  transform: translate(-50%, -50%);
+  color: white;
+  cursor: pointer;
+}
+
+.arrow-left {
+  position: absolute;
+  top: 84%;
+  left: 32%;
+  transform: translate(-50%, -50%);
+  color: white;
+  cursor: pointer;
+}
+
+.case-content {
+  display: none;
+}
+
+.case-content.active {
+  display: block;
+}

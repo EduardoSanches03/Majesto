@@ -19,33 +19,29 @@
 //   document.body.style.overflow = "";
 // }
 
-// const myObserver = new IntersectionObserver(
-//   (entries) => {
-//     entries.forEach((entry) => {
-//       if (entry.isIntersecting) {
-//         if (entry.target.classList.contains("hidden")) {
-//           entry.target.classList.add("show");
-//         }
-//         if (entry.target.classList.contains("hiddenU")) {
-//           entry.target.classList.add("showU");
-//         }
-//         if (entry.target.classList.contains("hiddenR")) {
-//           entry.target.classList.add("showR");
-//         }if (entry.target.classList.contains("hiddenO")) {
-//           entry.target.classList.add("showO");
-//         }
-//         if (
-//           entry.target.classList.contains("scroll_pause") &&
-//           !rolagemTravada
-//         ) {
-//           travarRolagem();
-//           rolagemTravada = true;
-//           setTimeout(destravarRolagem, 3000);
-//         }
+// const myObserver = new IntersectionObserver((entries) => {
+//   entries.forEach((entry) => {
+//     if (entry.isIntersecting) {
+//       if (entry.target.classList.contains("hidden")) {
+//         entry.target.classList.add("show");
 //       }
-//     });
-//   },
-// );
+//       if (entry.target.classList.contains("hiddenU")) {
+//         entry.target.classList.add("showU");
+//       }
+//       if (entry.target.classList.contains("hiddenR")) {
+//         entry.target.classList.add("showR");
+//       }
+//       if (entry.target.classList.contains("hiddenO")) {
+//         entry.target.classList.add("showO");
+//       }
+//       if (entry.target.classList.contains("scroll_pause") && !rolagemTravada) {
+//         travarRolagem();
+//         rolagemTravada = true;
+//         setTimeout(destravarRolagem, 3000);
+//       }
+//     }
+//   });
+// });
 
 // // Seleciona todos os elementos que queremos observar
 // const elements = document.querySelectorAll(

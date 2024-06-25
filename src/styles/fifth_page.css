@@ -1,131 +1,92 @@
 #pg5 {
-    position: relative;
-    width: 100%;
-    height: 180vh;
-  }
-  
-  #back_white {
-    position: absolute;
-    width: 100%;
-    height: 180vh;
-    z-index: 0;
-  }
-  
-  #pillar {
-    position: absolute;
-    width: 100%;
-    height: 180vh;
-    z-index: 1;
-  }
-  
-  #know_how {
-    position: absolute;
-    z-index: 1;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    top: 10vh;
-  }
-  
-  #asset_left,
-  #asset_right {
-    position: absolute;
-    height: 100vh;
-    top: 52vh;
-  }
-  
-  #asset_left {
-    left: 0;
-  }
-  
-  #asset_right {
-    right: 0;
-  }
-  
-  #middle_star {
-    position: absolute;
-    width: 20vw;
-    left: 50%;
-    top: 102vh;
-    transform: translate(-50%, -50%);
-  }
-  
-  .directors img {
-    position: absolute;
-    border-radius: 20vw;
-    width: 30vw;
-    object-fit: cover;
-    transition: transform 0.5s ease;
-  }
-  
-  #know_how {
-    top: 20vh;
-    width: 30vw;
-  }
-  
-  #alex,
-  #hovering_alex {
-    top: 104vh;
-    left: 16vw;
-  }
-  
-  #kellfany {
-    top: 30vh;
-    left: 16vw;
-  }
-  
-  #mineiro {
-    top: 30vh;
-    right: 16vw;
-  }
-  
-  #rodrigo {
-    top: 104vh;
-    right: 16vw;
-  }
-  
-  #alex-container {
-    position: relative;
-    z-index: 2;
-  }
-  
-  .hover-content :nth-child(3) {
-    top: 124vh;
-    left: 21.5vw;
-    text-align: center;
-    font-size: 2.5em;
-    position: absolute;
-    color: white;
-    z-index: 2;
-    font-family: "League Spartan", sans-serif;
-    font-weight: 200;
-  }
-  
-  .hover-content :nth-child(2) {
-    top: 156.5vh;
-    left: 28.5vw;
-    text-align: center;
-    font-size: 2.5rem;
-    position: absolute;
-    color: white;
-    z-index: 2;
-    font-family: "League Spartan", sans-serif;
-    font-weight: 500;
-  }
-  
-  .hover-content {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    opacity: 0;
-    transform: translateY(100%);
-    transition: transform 0.5s ease, opacity 0.5s ease;
-    z-index: 1;
-  }
-  
-  #alex-container:hover .hover-content {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
+  position: relative;
+  width: 100%;
+  height: 180vh;
+}
+
+#back_white {
+  position: absolute;
+  width: 100%;
+  height: 180vh;
+  z-index: 0;
+}
+
+#pillar {
+  position: absolute;
+  width: 100%;
+  height: 180vh;
+  z-index: 1;
+}
+
+#know_how {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 10vh;
+}
+
+#asset_left,
+#asset_right {
+  position: absolute;
+  height: 100vh;
+  top: 52vh;
+}
+
+#asset_left {
+  left: 0;
+}
+
+#asset_right {
+  right: 0;
+}
+
+#middle_star {
+  position: absolute;
+  width: 20vw;
+  left: 50%;
+  top: 102vh;
+  transform: translate(-50%, -50%);
+}
+
+.directors img {
+  position: absolute;
+  border-radius: 20vw;
+  width: 30vw;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+#know_how {
+  top: 20vh;
+  width: 30vw;
+}
+
+#alex,
+#hovering_alex {
+  top: 104vh;
+  left: 16vw;
+}
+
+#kellfany,
+#hovering_kellfany {
+  top: 30vh;
+  left: 16vw;
+}
+
+#mineiro,
+#hovering_mineiro {
+  top: 30vh;
+  right: 16vw;
+}
+
+#rodrigo,
+#hovering_rodrigo {
+  top: 104vh;
+  right: 16vw;
+}
+
+#alex-container {
+  position: relative;
+  z-index: 2;
+}
