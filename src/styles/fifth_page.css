@@ -4,18 +4,20 @@
   height: 180vh;
 }
 
-#back_white {
+#pillar, #back_white, #know_how, #asset_left, #asset_right, #middle_star {
   position: absolute;
-  width: 100%;
-  height: 180vh;
-  z-index: 0;
 }
 
 #pillar {
-  position: absolute;
   width: 100%;
   height: 180vh;
   z-index: 1;
+}
+
+#back_white {
+  width: 100%;
+  height: 180vh;
+  z-index: 0;
 }
 
 #know_how {
@@ -24,10 +26,10 @@
   left: 50%;
   transform: translate(-50%, -50%);
   top: 10vh;
+  width: 30vw;
 }
 
-#asset_left,
-#asset_right {
+#asset_left, #asset_right {
   position: absolute;
   height: 100vh;
   top: 52vh;
@@ -49,44 +51,57 @@
   transform: translate(-50%, -50%);
 }
 
-.directors img {
-  position: absolute;
-  border-radius: 20vw;
-  width: 30vw;
-  object-fit: cover;
-  transition: transform 0.5s ease;
+.directors {
+  position: relative; /* Ajuste para relativo para evitar conflitos com absolutos */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Preenche toda a altura do contêiner pai */
+  z-index: 3;
 }
 
-#know_how {
-  top: 20vh;
-  width: 30vw;
-}
-
-#alex,
-#hovering_alex {
-  top: 104vh;
-  left: 16vw;
-}
-
-#kellfany,
-#hovering_kellfany {
-  top: 30vh;
-  left: 16vw;
-}
-
-#mineiro,
-#hovering_mineiro {
-  top: 30vh;
-  right: 16vw;
-}
-
-#rodrigo,
-#hovering_rodrigo {
-  top: 104vh;
-  right: 16vw;
-}
-
-#alex-container {
+.director-card {
   position: relative;
-  z-index: 2;
+  width: 30vw; /* Ajuste o tamanho conforme necessário */
+  height: auto;
+  margin: 20px; /* Espaçamento entre os cartões */
+  overflow: hidden; /* Esconde o conteúdo que transborda */
+}
+
+.director-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  cursor: pointer; /* Alterado para ponteiro ao passar o mouse */
+  border-radius: 50%; /* Torna a imagem do diretor circular */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../assets/images/hovering_directors.png) no-repeat center center;
+  background-size: cover; /* Ajusta a imagem para cobrir o contêiner */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out; /* Adiciona uma transição suave */
+  text-align: center;
+  border-radius: 50%; /* Mantém a sobreposição circular */
+}
+
+.director-card:hover .overlay {
+  opacity: 1;
+}
+
+.name, .description {
+  font-size: 1.5em; /* Tamanho do texto ajustável */
+  margin: 0;
+  padding: 10px;
+  text-align: center;
 }
