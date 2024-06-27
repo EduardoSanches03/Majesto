@@ -16,54 +16,40 @@
   color: white;
   font-family: "League Spartan", sans-serif;
   font-weight: 900;
-  font-size: 33rem;
+  font-size: 34vw;
   margin-left: -2vw;
 }
 
 #asset-center {
   position: absolute;
-  top: 64%;
+  top: 90vh;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.stars-container {
-  position: absolute;
-  top: 77%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.stars-lines-wrapper {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  position: absolute;
+  top: 77%;
 }
 
-.lines-container-left,
-.lines-container-right {
-  position: relative;
+.lines-stars-container {
   display: flex;
   align-items: center;
-  gap: 180px;
 }
 
-.lines-container-right {
-  margin-left: 50.8vw;
+.lines-container, .stars-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Adiciona um espaço uniforme entre as linhas */
 }
 
-.lines {
+.line, .star {
   width: 4px;
   height: 400px;
-}
-
-#second,
-#fifth {
-  height: 250px;
-  margin-top: 40%;
-}
-
-#third,
-#fourth {
-  height: 70vh;
-  margin-bottom: 22%;
+  background-image: url('src/assets/images/vertical_line.png'); /* Substitua pelo caminho da sua imagem */
 }
 
 .stars {
@@ -106,7 +92,7 @@
 .case-logo {
   position: absolute;
   width: 30vw;
-  top: 50%;
+  top: 68vh;
   left: 50%;
   transform: translate(-50%, -50%);
   transform-style: preserve-3d;
@@ -114,7 +100,7 @@
 
 .case-description {
   position: absolute;
-  top: 84%;
+  top: 110vh;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -126,7 +112,7 @@
 
 .case-name {
   position: absolute;
-  top: 95%;
+  top: 122vh;
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: "League Spartan", sans-serif;
@@ -137,8 +123,8 @@
 
 .arrow-right {
   position: absolute;
-  top: 84%;
-  left: 67.6%;
+  top: 110vh;
+  left: 64vw;
   transform: translate(-50%, -50%);
   color: white;
   cursor: pointer;
@@ -146,8 +132,8 @@
 
 .arrow-left {
   position: absolute;
-  top: 84%;
-  left: 32%;
+  top: 110vh;
+  right: 64vw;
   transform: translate(-50%, -50%);
   color: white;
   cursor: pointer;
