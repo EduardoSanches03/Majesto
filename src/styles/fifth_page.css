@@ -101,8 +101,8 @@
 
 .name  {
   position: absolute;
-  font-size: 2.5em; 
-  margin-top: 36vh;
+  font-size: 2.5vw; 
+  top: 38.5vh;
   text-align: center;
   font-family: "League Spartan", sans-serif;
   font-weight: 300;
@@ -111,7 +111,7 @@
 .description{
   position: absolute;
   text-align: center;
-  font-size: 3em; 
+  font-size: 2.4vw; 
   font-family: "League Spartan", sans-serif;
   font-weight: 200;
   margin-bottom: 8vh;
