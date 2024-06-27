@@ -1,0 +1,62 @@
+/* Estilos gerais para o contêiner principal */
+.line-star-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10vw; /* Espaçamento entre os itens */
+  position: relative;
+}
+
+/* Estilos para cada item individual dentro do contêiner */
+.line-star {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.line,
+.star {
+  position: absolute;
+  top: 0;
+}
+
+/* Estilos específicos para a linha */
+.line {
+  bottom: 0;
+  width: 0.22vw;
+}
+
+.star {
+  transform: translateY(-50%); /* Centraliza a estrela sobre a linha */
+}
+
+.line-star-1{
+
+}
+
+.line-star-2 .line {
+  height: 70px; /* Altura específica para linha 2 */
+}
+
+.line-star-3 .line {
+  height: 60px; /* Altura específica para linha 3 */
+}
+
+.line-star-4 .line {
+  height: 80px; /* Altura específica para linha 4 */
+}
+
+.line-star-5 .line {
+  height: 55px; /* Altura específica para linha 5 */
+}
+
+.line-star-6 .line {
+  height: 65px; /* Altura específica para linha 6 */
+}
+
+.star {
+  width: 20px; /* Ajuste a largura conforme necessário */
+}

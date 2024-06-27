@@ -3,7 +3,6 @@
   width: 100%;
   height: 126vh;
   background-color: black;
-  overflow: hidden;
 }
 
 #angels_frame_blue {
@@ -27,67 +26,10 @@
   transform: translate(-50%, -50%);
 }
 
-.stars-lines-wrapper {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  position: absolute;
-  top: 77%;
-}
+/* REFERENTE AS ESTRELAS E LINHAS */
 
-.lines-stars-container {
-  display: flex;
-  align-items: center;
-}
 
-.lines-container, .stars-container {
-  display: flex;
-  flex-direction: column;
-  gap: 20px; /* Adiciona um espaço uniforme entre as linhas */
-}
-
-.line, .star {
-  width: 4px;
-  height: 400px;
-  background-image: url('src/assets/images/vertical_line.png'); /* Substitua pelo caminho da sua imagem */
-}
-
-.stars {
-  width: 10vh;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-#first-star {
-  left: 0.2vw;
-  bottom: 80vh;
-}
-
-#second-star {
-  left: 12.2vw;
-  bottom: 56vh;
-}
-
-#third-star {
-  bottom: 88vh;
-  left: 24vw;
-}
-
-#fourth-star {
-  bottom: 88vh;
-  left: 75.2vw;
-}
-
-#fifth-star {
-  left: 87.3vw;
-  bottom: 56vh;
-}
-
-#sixth-star {
-  bottom: 80vh;
-  left: 99.3vw;
-}
+/* REFERENTE AS ESTRELAS E LINHAS */
 
 .case-logo {
   position: absolute;
@@ -124,7 +66,7 @@
 .arrow-right {
   position: absolute;
   top: 110vh;
-  left: 64vw;
+  left: 68vw;
   transform: translate(-50%, -50%);
   color: white;
   cursor: pointer;
@@ -133,7 +75,7 @@
 .arrow-left {
   position: absolute;
   top: 110vh;
-  right: 64vw;
+  right: 68vw;
   transform: translate(-50%, -50%);
   color: white;
   cursor: pointer;

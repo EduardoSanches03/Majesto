@@ -37,7 +37,7 @@ const myObserver = new IntersectionObserver((entries) => {
       if (entry.target.classList.contains("scroll_pause") && !rolagemTravada) {
         travarRolagem();
         rolagemTravada = true;
-        setTimeout(destravarRolagem, 3000);
+        setTimeout(destravarRolagem, 1800);
       }
     }
   });
