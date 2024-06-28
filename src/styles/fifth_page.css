@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Augustus';
+  src: url('../assets/fonts/AUGUSTUS.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 #pg5 {
   position: relative;
   width: 100%;
@@ -101,11 +108,11 @@
 
 .name  {
   position: absolute;
-  font-size: 2.5vw; 
-  top: 38.5vh;
+  font-size: 1.4vw; 
+  top: 38.8vh;
   text-align: center;
-  font-family: "League Spartan", sans-serif;
-  font-weight: 300;
+  font-family: 'Augustus', sans-serif;
+  
 }
 
 .description{
@@ -117,24 +124,57 @@
   margin-bottom: 8vh;
 }
 
+#kellfany{
+  background-image: url(../assets/images/kellfany.png);
+}
+#alex{
+  background-image: url(../assets/images/alex.png);
+}
+#rodrigo{
+  background-image: url(../assets/images/rodrigo.png);
+}
+#rogerio{
+  background-image: url(../assets/images/mineiro.png);
+}
+
 #kellfany-container{
   top: 48vh;
   left: 22vw;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
 
 #rodrigo-container{
   top: 48vh;
   left: 4vw;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
 
 #alex-container{
   top: 104vh;
   right: 4vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
+
+
 
 #rogerio-container{
   top: 104vh;
   right: 20.6vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
