@@ -126,15 +126,19 @@
 
 #kellfany{
   background-image: url(../assets/images/kellfany.png);
+  background-position: center;
 }
 #alex{
   background-image: url(../assets/images/alex.png);
+  background-position: center;
 }
 #rodrigo{
   background-image: url(../assets/images/rodrigo.png);
+  background-position: center;
 }
 #rogerio{
   background-image: url(../assets/images/mineiro.png);
+  background-position: center;
 }
 
 #kellfany-container{
