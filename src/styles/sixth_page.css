@@ -3,6 +3,7 @@
   width: 100%;
   height: 126vh;
   background-color: black;
+  overflow: hidden;
 }
 
 #angels_frame_blue {
@@ -21,35 +22,87 @@
 
 #asset-center {
   position: absolute;
-  top: 90vh;
+  width: 86vw;
+  top: 80vh;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
 /* REFERENTE AS ESTRELAS E LINHAS */
 
+.line-star-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10; 
+  pointer-events: none; 
+}
 
-/* REFERENTE AS ESTRELAS E LINHAS */
+/* Estilo para cada linha e estrela */
+.line-star {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.line-star .line {
+  order: 1; /* Linha em baixo */
+}
+
+.line-star .star {
+  order: 0; /* Estrela em cima */
+}
+
+.line{
+  height: 40vh;
+  width: 0.2vw;
+}
+.star{
+  width: 4vw;
+  margin-bottom: 30px;
+}
+
+/*Linhas e estrelas da esquerda */
+.line-star-1 { bottom: 2%; left: -2.04%;}
+.line-star-1 .line{ height: 50vh; }
+.line-star-2 { bottom: 2%; left: 4%; }
+.line-star-2 .line{ height: 30vh; }
+.line-star-3 { bottom: 2%; left: 10%; }
+.line-star-3 .line{ height: 70vh; }
+
+/* linhas e estrelas da direita */
+.line-star-4 {bottom: 2%; right: 10%; }
+.line-star-4 .line{ height: 70vh; }
+.line-star-5 {bottom: 2%; right: 4%; }
+.line-star-5 .line{ height: 30vh; }
+.line-star-6 { bottom: 2%; right: -2.04%; }
+.line-star-6 .line{ height: 50vh; }
+
 
 .case-logo {
   position: absolute;
   width: 30vw;
-  top: 68vh;
+  top: 60vh;
   left: 50%;
   transform: translate(-50%, -50%);
   transform-style: preserve-3d;
+  box-shadow: 0 8px 80px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 50%;
 }
 
 .case-description {
   position: absolute;
-  top: 110vh;
+  top: 106vh;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   font-family: "League Spartan", sans-serif;
   font-weight: 600;
   color: white;
-  font-size: 1.5rem;
+  font-size: 2vw;
 }
 
 .case-name {
@@ -59,14 +112,14 @@
   transform: translate(-50%, -50%);
   font-family: "League Spartan", sans-serif;
   font-weight: 200;
-  font-size: 2rem;
+  font-size: 2vw;
   color: white;
 }
 
 .arrow-right {
   position: absolute;
-  top: 110vh;
-  left: 68vw;
+  top: 104vh;
+  left: 74vw;
   transform: translate(-50%, -50%);
   color: white;
   cursor: pointer;
@@ -74,8 +127,8 @@
 
 .arrow-left {
   position: absolute;
-  top: 110vh;
-  right: 68vw;
+  top: 104vh;
+  right: 74vw;
   transform: translate(-50%, -50%);
   color: white;
   cursor: pointer;
