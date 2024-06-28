@@ -66,19 +66,19 @@
 }
 
 /*Linhas e estrelas da esquerda */
-.line-star-1 { bottom: 2%; left: -2.04%;}
+.line-star-1 { bottom: 0; left: -2.04%;}
 .line-star-1 .line{ height: 50vh; }
-.line-star-2 { bottom: 2%; left: 4%; }
+.line-star-2 { bottom: 0; left: 4%; }
 .line-star-2 .line{ height: 30vh; }
-.line-star-3 { bottom: 2%; left: 10%; }
+.line-star-3 { bottom: 0; left: 10%; }
 .line-star-3 .line{ height: 70vh; }
 
 /* linhas e estrelas da direita */
-.line-star-4 {bottom: 2%; right: 10%; }
+.line-star-4 {bottom: 0; right: 10%; }
 .line-star-4 .line{ height: 70vh; }
-.line-star-5 {bottom: 2%; right: 4%; }
+.line-star-5 {bottom: 0; right: 4%; }
 .line-star-5 .line{ height: 30vh; }
-.line-star-6 { bottom: 2%; right: -2.04%; }
+.line-star-6 { bottom: 0; right: -2.04%; }
 .line-star-6 .line{ height: 50vh; }
 
 
@@ -100,7 +100,7 @@
   transform: translate(-50%, -50%);
   text-align: center;
   font-family: "League Spartan", sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   color: white;
   font-size: 2vw;
 }
@@ -110,14 +110,14 @@
   top: 122vh;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: "League Spartan", sans-serif;
-  font-weight: 200;
-  font-size: 2vw;
+  font-family: "Augustus", sans-serif;
+  font-size: 1.6vw;
   color: white;
 }
 
 .arrow-right {
   position: absolute;
+  font-size: 1.6vw;
   top: 104vh;
   left: 74vw;
   transform: translate(-50%, -50%);
@@ -127,6 +127,7 @@
 
 .arrow-left {
   position: absolute;
+  font-size: 1.6vw;
   top: 104vh;
   right: 74vw;
   transform: translate(-50%, -50%);

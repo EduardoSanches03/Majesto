@@ -50,3 +50,10 @@ const elements = document.querySelectorAll(
 
 // Adiciona os elementos ao observer
 elements.forEach((element) => myObserver.observe(element));
+
+
+
+
+
+
+
