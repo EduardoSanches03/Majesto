@@ -56,7 +56,7 @@
                 onclick="closeMenu()"
               />
               <p id="home"><a href="#home">HOME</a></p>
-              <p id="about"><a href="">SOBRE NÓS</a></p>
+              <p id="about"><a href="#about-us">SOBRE NÓS</a></p>
               <p id="customers"><a href="#cases">CLIENTES</a></p>
               <!-- <p id="services">SERVIÇOS</p>
               <p id="contact">CONTATO</p> -->
@@ -118,7 +118,7 @@
           </div>
         </div>
 
-        <div class="hidden">
+        <div id="about-us" class="hidden">
           <div id="p2_text">
             <p>ELEVANDO O MARKETING DE FRANQUIAS</p>
           </div>
@@ -277,13 +277,13 @@
               class="director-image"
             />
             <p class="name">
-              kellfany <br />
+              kelfany <br />
               Budel
             </p>
 
             <div class="overlay">
               <p class="name">
-                kellfany <br />
+                kelfany <br />
                 Budel
               </p>
               <p class="description">
@@ -457,6 +457,7 @@
             </div>
           </div>
         </div>
+
         <div class="cases-container">
           <div>
             <img id="asset-center" src="src/assets/images/asset_center.png" />
@@ -465,12 +466,21 @@
             ></i>
             <i class="fa-solid fa-arrow-left arrow-left arrow-left-click"></i>
           </div>
+
           <div class="case-content cookie-content active">
-            <img
-              class="case-logo"
-              src="src/assets/images/cookie-logo.png"
-              alt="Cookie Store Logo"
-            />
+            <div class="case-logo">
+              <img
+                class="case-logo-left"
+                src="src/assets/images/cookie-logo.png"
+                alt="Cookie Store Logo"
+              />
+              <img
+                class="case-logo-right"
+                src="src/assets/images/cookie-logo.png"
+                alt="Cookie Store Logo"
+              />
+            </div>
+
             <p class="case-description">
               Café especializado em cookies e produtos <br />
               americanos, com uma grande variedade de <br />
@@ -479,6 +489,7 @@
             </p>
             <p class="case-name">Cookie Store</p>
           </div>
+
           <div class="case-content bubble-content">
             <img
               class="case-logo"
