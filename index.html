@@ -24,7 +24,8 @@
     <link rel="stylesheet" href="src/styles/third_page.css" />
     <link rel="stylesheet" href="src/styles/fourth_page.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="src/styles/fifth_page.css" />
+    <link rel="stylesheet" href="src/styles/fifthPage/fifth_page.css" />
+    <link rel="stylesheet" href="src/styles/fifthPage/modal.css" />
     <link rel="stylesheet" href="src/styles/sixth_page.css" />
     <link rel="icon" type="png" href="src/assets/icons/logo_menu_icon.png" />
 
@@ -271,28 +272,51 @@
           <!-- Cartões do Diretor -->
           <div id="kellfany-container" class="director-card">
             <img
-              id="kellfany"
-              src="src/assets/images/mid_circle.png"
-              alt="kellfany"
-              class="director-image"
+                id="kellfany"
+                src="src/assets/images/mid_circle.png"
+                alt="kellfany"
+                class="director-image"
             />
             <p class="name">
-              kelfany <br />
-              Budel
-            </p>
-
-            <div class="overlay">
-              <p class="name">
-                kelfany <br />
+                Kelfany <br />
                 Budel
-              </p>
-              <p class="description">
-                Co-Fundadora e <br />
-                sócia proprietária <br />da
-                <span class="highlight">majesto.</span>
-              </p>
+            </p>
+        
+            <div id="kellfanyOverlay" class="overlay">
+                <p class="name">
+                    Kelfany <br />
+                    Budel
+                </p>
+                <p class="description">
+                    Co-Fundadora e <br />
+                    sócia proprietária <br />da
+                    <span class="highlight">majesto.</span>
+                </p>
             </div>
-          </div>
+        
+            <div id="kellfanyModal" class="Modal">
+                <div class="modal-conteudo">
+                    <span class="fechar">&times;</span>
+                    <p>
+                        Com uma notável trajetória de cinco anos liderando o marketing
+                        de três grandes franquias, Kelfany Budel é uma força
+                        impulsionadora no mundo do empreendedorismo e das franquias.
+                        Sua gestão bem-sucedida incluiu a maior franquia de
+                        entretenimento do Brasil, Sniper, a Mais1, agora classificada
+                        entre as 50 maiores franquias do país pela ABF, e a Bubble Mix
+                        Tea, que experimentou um crescimento impressionante de 66% sob
+                        sua liderança. Hoje, ao unir suas habilidades e experiências
+                        com os demais sócios, Kelfany Budel torna-se uma peça
+                        fundamental na missão conjunta de preencher a lacuna existente
+                        no mercado de marketing para franquias. Seu conhecimento
+                        especializado e estratégias inovadoras reforçam a posição do
+                        grupo como líderes de destaque no universo das franquias.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        
 
           <div id="alex-container" class="director-card">
             <img
@@ -523,7 +547,9 @@
       </div>
     </section>
 
+    
     <script src="src/javascript/index.js"></script>
+    <script src="src/javascript/modal.js"></script>
     <script src="src/javascript/statue_animations.js"></script>
     <script src="src/javascript/menu_animations.js"></script>
     <script src="src/javascript/carousel.js"></script>
