@@ -16,8 +16,8 @@
 }
 
 .Modal.hidden {
-    animation: modal-saida 0.3s ease-out forwards;
-  }
+  animation: modal-saida 0.3s ease-out forwards;
+}
 
 #asset_blue {
   position: relative;
@@ -36,7 +36,7 @@
 }
 
 .modal-name {
-    color: white;
+  color: white;
   position: absolute;
   font-size: 2.4vw;
   text-align: center;
@@ -57,8 +57,19 @@
 #kellfany-modal-picture {
   background-image: url(../../assets/images/kellfany.png);
 }
+#alex-modal-picture {
+  background-image: url(../../assets/images/alex.png);
+}
 
-.modal-content {
+#rogerio-modal-picture {
+    background-image: url(../../assets/images/mineiro.png);
+  }
+
+  #rodrigo-modal-picture {
+    background-image: url(../../assets/images/rodrigo.png);
+  }
+
+  .modal-content {
   position: absolute;
   color: white;
   width: 40%;
@@ -67,7 +78,7 @@
   font-weight: 600;
   font-size: 1.6vw;
   line-height: 1.8vw;
-  top: 30%;
+  top: 32%;
   left: 50%;
 }
 
@@ -92,23 +103,23 @@
 }
 
 @keyframes modal-entrada {
-    from {
-      transform: translateX(-100%);
-      opacity: 0;
-    }
-    to {
-      transform: translateX(0);
-      opacity: 1;
-    }
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
   }
-  
-  @keyframes modal-saida {
-    from {
-      transform: translateX(0);
-      opacity: 1;
-    }
-    to {
-      transform: translateX(-100%);
-      opacity: 0;
-    }
+  to {
+    transform: translateX(0);
+    opacity: 1;
   }
+}
+
+@keyframes modal-saida {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
