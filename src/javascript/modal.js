@@ -1,23 +1,30 @@
-// Obtém a overlay e o modal
 var overlay = document.getElementById("kellfanyOverlay");
 var modal = document.getElementById("kellfanyModal");
 var section = document.getElementById("pg5");
 
-// Obtém o elemento <span> que fecha o modal
 var span = document.getElementsByClassName("fechar")[0];
 
+overlay.onclick = function () {
+  modal.classList.remove("hidden");
+  modal.style.display = "block";
+  setTimeout(function () {
+    modal.classList.add("show");
+  }, 10);
+};
 
-overlay.onclick = function() {
-    modal.style.display = "block";
-    section.style.overflow = "hidden"
-}
-
-span.onclick = function() {
+span.onclick = function () {
+  modal.classList.remove("show");
+  modal.classList.add("hidden");
+  setTimeout(function () {
     modal.style.display = "none";
-}
-
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
+  }, 300);
+};
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.classList.remove("show");
+    modal.classList.add("hidden");
+    setTimeout(function () {
+      modal.style.display = "none";
+    }, 300);
+  }
+};
