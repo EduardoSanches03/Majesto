@@ -63,6 +63,7 @@
 .star {
   width: 4vw;
   margin-bottom: 30px;
+  animation: pulse 2s linear infinite;
 }
 
 /*Linhas e estrelas da esquerda */
@@ -70,12 +71,17 @@
   bottom: 0;
   left: -2.04%;
 }
+
 .line-star-1 .line {
   height: 50vh;
 }
 .line-star-2 {
   bottom: 0;
   left: 4%;
+}
+
+.line-star-2 .star{
+animation-delay: 400ms;
 }
 .line-star-2 .line {
   height: 30vh;
@@ -84,6 +90,9 @@
   bottom: 0;
   left: 10%;
 }
+.line-star-3 .star{
+  animation-delay: 600ms;
+  }
 .line-star-3 .line {
   height: 70vh;
 }
