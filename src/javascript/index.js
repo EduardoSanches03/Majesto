@@ -1,7 +1,9 @@
 let rolagemTravada = false;
 
 function travarRolagem() {
-  document.body.style.overflow = "hidden";
+  var hash = window.location.hash;
+  if (hash !== "#cases") document.body.style.overflow = "hidden";
+
   const hiddenIElement = document.querySelector(".hiddenI");
   const hiddenIElement2 = document.querySelector(".text-container");
   if (hiddenIElement) {
