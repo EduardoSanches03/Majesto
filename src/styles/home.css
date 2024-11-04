@@ -226,7 +226,7 @@ a {
   }
 
   #statue {
-    width: 78vw;
+    width: 86vw;
     height: 90vh;
     position: absolute;
     z-index: 2;
@@ -236,16 +236,16 @@ a {
 
   #glitch_statue {
     position: absolute;
-    width: 78vw;
+    width: 86vw;
     height: 90vh;
     top: 10px;
-    left: 13vw;
+    left: 12vw;
     z-index: 1;
   }
 
   #glitch_statue_top {
     position: absolute;
-    width: 78vw;
+    width: 86vw;
     height: 90vh;
     top: 10px;
     left: 13vw;
