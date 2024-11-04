@@ -293,7 +293,7 @@ a {
     height: 4vh;
     cursor: pointer;
     position: relative;
-    left: 18vw;
+    left: 16vw;
     top: 2vh;
     animation: pulse 1.2s linear infinite;
   }
