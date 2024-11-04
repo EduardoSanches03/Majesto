@@ -38,7 +38,7 @@
       <div class="container">
         <nav>
           <div id="menu">
-            <div id="logo_menu" onclick="abrirMenu()">
+            <div id="logo_menu" onclick="toggleMenu()">
               <img
                 id="logo"
                 src="src/assets/images/logo_menu.png"
@@ -50,12 +50,17 @@
                 alt="texto do menu giratorio"
               />
             </div>
+
+            <div id="menu-mobile" onclick="toggleMenu()">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+
             <div id="menu_options" style="display: none">
               <img
                 id="close_options_star"
                 src="src/assets//images/star.png"
                 alt="estrelinha"
-                onclick="closeMenu()"
+                onclick="toggleMenu()"
               />
               <p id="home"><a href="#home">HOME</a></p>
               <p id="about"><a href="#about-us">SOBRE NÓS</a></p>

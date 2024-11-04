@@ -7,34 +7,55 @@ document.addEventListener("DOMContentLoaded", (event) => {
     menuText.style.transform = `rotate(${angle}deg)`;
     requestAnimationFrame(rotate);
   }
-  
+
   rotate();
 });
 
-function abrirMenu() {
+
+function toggleMenu() {
   const logoMenu = document.getElementById("logo_menu");
+  const menuMobile = document.getElementById("menu-mobile");
   const menuOptions = document.getElementById("menu_options");
 
-  logoMenu.classList.add("fade-out");
+  // Verifica se o menu está visível
+  const isOpen = menuOptions.style.display === "block";
 
-  setTimeout(() => {
-    logoMenu.style.display = "none";
-    menuOptions.style.display = "block";
-    menuOptions.classList.add("slide-in");
-  }, 1000); // Tempo igual ao da duração da animação CSS
-}
+  if (isOpen) {
+    // Fecha o menu para desktop e mobile
+    menuOptions.classList.remove("slide-in");
+    menuOptions.classList.add("slide-out");
 
-function closeMenu() {
-  const menuOptions = document.getElementById("menu_options");
-  const logoMenu = document.getElementById("logo_menu");
+    setTimeout(() => {
+      menuOptions.style.display = "none";
+      menuOptions.classList.remove("slide-out");
 
-  menuOptions.classList.remove("slide-in");
-  menuOptions.classList.add("slide-out");
+      if (window.innerWidth > 768) {
+        logoMenu.style.display = "block";
+        logoMenu.classList.remove("fade-out");
+        logoMenu.classList.add("fade-in");
+      } else {
+        menuMobile.style.display = "block";
+        menuMobile.classList.remove("fade-out");
+        menuMobile.classList.add("fade-in");
+      }
+    }, 1000); // Ajuste de acordo com a duração da animação CSS
+  } else {
+    // Abre o menu para desktop e mobile
+    if (window.innerWidth > 768) {
+      logoMenu.classList.add("fade-out");
+    } else {
+      menuMobile.classList.add("fade-out");
+    }
 
-  setTimeout(() => {
-    menuOptions.style.display = "none";
-    logoMenu.style.display = "block";
-    logoMenu.classList.remove("fade-out");
-    logoMenu.classList.add("fade-in");
-  }, 1000); // Tempo igual ao da duração da animação CSS
+    setTimeout(() => {
+      if (window.innerWidth > 768) {
+        logoMenu.style.display = "none";
+      } else {
+        menuMobile.style.display = "none";
+      }
+
+      menuOptions.style.display = "block";
+      menuOptions.classList.add("slide-in");
+    }, 1000); // Ajuste de acordo com a duração da animação CSS
+  }
 }

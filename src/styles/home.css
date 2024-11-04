@@ -64,6 +64,10 @@
   pointer-events: none;
 }
 
+#menu_mobile{
+  display: none;
+}
+
 #logo {
   position: absolute;
   width: 26vw;
@@ -255,30 +259,20 @@ a {
   }
 
   #logo {
-    position: absolute;
-    width: 38vw;
-    height: auto;
+    display: none;
   }
 
   #menu_text {
+    display: none;
+  }
+
+  #menu-mobile{
+    display: block;
     position: absolute;
-    border-radius: 50%;
-    width: 36vw;
-    height: auto;
-    margin-right: 1vw;
-    margin-top: 1vw;
-    overflow: hidden;
-  }
-
-  #logo,
-  #menu_text {
-    z-index: 0;
-    top: 1vh;
-    right: -4vw;
-  }
-
-  #logo_menu {
-    cursor: pointer;
+    color: white;
+    top: 2vh;
+    right: 6vw;
+    font-size: 2em;
   }
   #menu_options {
     position: absolute;
@@ -293,7 +287,7 @@ a {
     cursor: pointer;
     transition: transform 0.5s;
   }
-  
+
   #close_options_star {
     width: 8vw;
     height: 4vh;
