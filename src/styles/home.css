@@ -257,14 +257,14 @@ a {
 
   #logo {
     position: absolute;
-    width: 36vw;
+    width: 38vw;
     height: auto;
   }
   
   #menu_text {
     position: absolute;
     border-radius: 50%;
-    width: 34vw;
+    width: 36vw;
     height: auto;
     margin-right: 1vw;
     margin-top: 1vw;
@@ -274,8 +274,8 @@ a {
   #logo,
   #menu_text {
     z-index: 0;
-    top: -0.6vh;
-    right: -2vw;
+    top: 1vh;
+    right: -4vw;
   }
   
   #logo_menu {
