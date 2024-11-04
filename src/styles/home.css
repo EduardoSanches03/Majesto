@@ -203,12 +203,12 @@ a {
 @media (max-width: 480px) {
   #pg1 {
     width: 100%;
-    height: 80vh;
+    height: 90vh;
   }
 
   .majesto_text {
     width: 47vw;
-    height: 80vh;
+    height: 90vh;
     z-index: 0;
   }
   
@@ -222,13 +222,13 @@ a {
     );
     z-index: 1;
     width: 54vw;
-    height: 80vh;
+    height: 90vh;
     top: 0;
   }
   
   #statue {
     width: 78vw;
-    height: 80vh;
+    height: 90vh;
     position: absolute;
     z-index: 2;
     left: 13vw;
@@ -238,7 +238,7 @@ a {
   #glitch_statue {
     position: absolute;
     width: 78vw;
-    height: 80vh;
+    height: 90vh;
     top: 10px;
     left: 13vw;
     z-index: 1;
@@ -247,7 +247,7 @@ a {
   #glitch_statue_top {
     position: absolute;
     width: 78vw;
-    height: 80vh;
+    height: 90vh;
     top: 10px;
     left: 13vw;
     z-index: 3;
