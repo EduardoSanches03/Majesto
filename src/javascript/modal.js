@@ -1,4 +1,3 @@
-// Obtém todos os overlays e modais
 var overlays = document.getElementsByClassName("overlay");
 var modals = document.getElementsByClassName("Modal");
 var spans = document.getElementsByClassName("fechar");

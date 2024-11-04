@@ -99,7 +99,7 @@
   top: 0;
 }
 
-a{
+a {
   color: rgb(199, 197, 197);
   text-decoration: none;
 }
@@ -197,4 +197,88 @@ a{
 
 .slide-in {
   animation: slideIn 1s forwards;
+}
+
+
+@media (max-width: 480px) {
+  #pg1 {
+    width: 100%;
+    height: 80vh;
+  }
+
+  .majesto_text {
+    width: 47vw;
+    height: 80vh;
+    z-index: 0;
+  }
+  
+  #box_shadow {
+    position: absolute;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.7092086834733893) 90%
+    );
+    z-index: 1;
+    width: 54vw;
+    height: 80vh;
+    top: 0;
+  }
+  
+  #statue {
+    width: 78vw;
+    height: 80vh;
+    position: absolute;
+    z-index: 2;
+    left: 13vw;
+    top: 0;
+  }
+
+  #glitch_statue {
+    position: absolute;
+    width: 78vw;
+    height: 80vh;
+    top: 10px;
+    left: 13vw;
+    z-index: 1;
+  }
+  
+  #glitch_statue_top {
+    position: absolute;
+    width: 78vw;
+    height: 80vh;
+    top: 10px;
+    left: 13vw;
+    z-index: 3;
+    --x-offset: 3;
+    --y-offset: 2;
+  }
+
+  #logo {
+    position: absolute;
+    width: 36vw;
+    height: auto;
+  }
+  
+  #menu_text {
+    position: absolute;
+    border-radius: 50%;
+    width: 34vw;
+    height: auto;
+    margin-right: 1vw;
+    margin-top: 1vw;
+    overflow: hidden;
+  }
+  
+  #logo,
+  #menu_text {
+    z-index: 0;
+    top: -0.6vh;
+    right: -2vw;
+  }
+  
+  #logo_menu {
+    cursor: pointer;
+  }
 }

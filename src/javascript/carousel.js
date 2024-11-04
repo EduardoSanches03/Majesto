@@ -6,19 +6,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
     arrows.forEach((arrow, index) => {
         arrow.addEventListener('click', function () {
-            // Oculta o conteúdo atual
             contents[currentIndex].classList.remove('active');
 
-            // Determina a direção do clique
             if (arrow.classList.contains('arrow-right-click')) {
-                // Avança para o próximo conteúdo
                 currentIndex = (currentIndex + 1) % contents.length;
             } else if (arrow.classList.contains('arrow-left-click')) {
-                // Retrocede para o conteúdo anterior
                 currentIndex = (currentIndex - 1 + contents.length) % contents.length;
             }
 
-            // Exibe o próximo conteúdo
             contents[currentIndex].classList.add('active');
         });
     });
