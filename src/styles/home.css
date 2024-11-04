@@ -199,7 +199,6 @@ a {
   animation: slideIn 1s forwards;
 }
 
-
 @media (max-width: 480px) {
   #pg1 {
     width: 100%;
@@ -211,7 +210,7 @@ a {
     height: 90vh;
     z-index: 0;
   }
-  
+
   #box_shadow {
     position: absolute;
     background: rgb(0, 0, 0);
@@ -225,7 +224,7 @@ a {
     height: 90vh;
     top: 0;
   }
-  
+
   #statue {
     width: 78vw;
     height: 90vh;
@@ -243,7 +242,7 @@ a {
     left: 13vw;
     z-index: 1;
   }
-  
+
   #glitch_statue_top {
     position: absolute;
     width: 78vw;
@@ -260,7 +259,7 @@ a {
     width: 38vw;
     height: auto;
   }
-  
+
   #menu_text {
     position: absolute;
     border-radius: 50%;
@@ -270,15 +269,38 @@ a {
     margin-top: 1vw;
     overflow: hidden;
   }
-  
+
   #logo,
   #menu_text {
     z-index: 0;
     top: 1vh;
     right: -4vw;
   }
-  
+
   #logo_menu {
     cursor: pointer;
+  }
+  #menu_options {
+    position: absolute;
+    z-index: 5;
+    right: 2vw;
+    top: -2vh;
+  }
+
+  #menu_options p {
+    font-size: 1em;
+    margin-top: 0.2vh;
+    cursor: pointer;
+    transition: transform 0.5s;
+  }
+  
+  #close_options_star {
+    width: 8vw;
+    height: 4vh;
+    cursor: pointer;
+    position: relative;
+    left: 18vw;
+    top: 2vh;
+    animation: pulse 1.2s linear infinite;
   }
 }
