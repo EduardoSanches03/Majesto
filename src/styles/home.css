@@ -6,7 +6,7 @@
   width: 100%;
   font-family: "League Spartan ", sans-serif;
   font-weight: 800;
-  height: 137.3vh;
+  height: 140;
 }
 
 .majesto_text {
@@ -25,13 +25,13 @@
   );
   z-index: 1;
   width: 54vw;
-  height: 137.3vh;
+  height: 138vh;
   top: 0;
 }
 
 #statue {
   width: 78vw;
-  height: 137.3vh;
+  height: 138vh;
   position: absolute;
   z-index: 2;
   left: 13vw;
@@ -41,7 +41,7 @@
 #glitch_statue {
   position: absolute;
   width: 78vw;
-  height: 137vh;
+  height: 138vh;
   top: 10px;
   left: 13vw;
   z-index: 1;
@@ -64,7 +64,7 @@
   pointer-events: none;
 }
 
-#menu_mobile{
+#menu-mobile{
   display: none;
 }
 
