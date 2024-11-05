@@ -64,9 +64,17 @@
   pointer-events: none;
 }
 
-#menu-mobile{
+#menu-mobile {
   display: none;
+  position: absolute;
+  color: white;
+  top: 2vh;
+  right: 4vw;
+  font-size: 2em;
+  z-index: 6;
+  cursor: pointer;
 }
+
 
 #logo {
   position: absolute;
@@ -231,18 +239,18 @@ a {
 
   #statue {
     width: 110vw;
-    height: 84vh;
+    height: 80vh;
     position: absolute;
     z-index: 2;
     left: 10vw;
-    top: 6vh;
+    top: 10vh;
   }
 
   #glitch_statue {
     position: absolute;
     width: 100vw;
-    height: 84vh;
-    top: 6.2vh;
+    height: 80vh;
+    top: 10.6vh;
     left: 12vw;
     z-index: 1;
   }
@@ -250,9 +258,9 @@ a {
   #glitch_statue_top {
     position: absolute;
     width: 100vw;
-    height: 90vh;
-    top: 10px;
-    left: 13vw;
+    height: 80vh;
+    top: 10vh;
+    left: 18vw;
     z-index: 3;
     --x-offset: 3;
     --y-offset: 2;
@@ -266,15 +274,10 @@ a {
     display: none;
   }
 
-  #menu-mobile{
+  #menu-mobile {
     display: block;
-    position: absolute;
-    color: white;
-    top: 2vh;
-    right: 4vw;
-    font-size: 2em;
-    z-index: 6;
   }
+
   #menu_options {
     position: absolute;
     z-index: 5;

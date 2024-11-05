@@ -19,7 +19,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#000000" />
     <link rel="stylesheet" href="./src/styles/style.css" />
-    <link rel="stylesheet" href="src/styles/home.css" />
+    <link rel="stylesheet" href="src/styles/FirstPage/home.css" />
+    <link rel="stylesheet" href="src/styles/FirstPage/modal.css" />
     <link rel="stylesheet" href="src/styles/scrollBar.css" />
     <link rel="stylesheet" href="src/styles/second_page.css" />
     <link rel="stylesheet" href="src/styles/third_page.css" />
@@ -53,7 +54,32 @@
 
             <div id="menu-mobile" onclick="toggleMenu()">
               <i class="fa-solid fa-bars"></i>
+            </div>  
+
+            <div class="menu-modal" id="menuModal">
+              <div class="modal-left" onclick="toggleMenu()"></div> <!-- Parte semitransparente -->
+              <div class="modal-right">
+                <div class="itens-menu">
+                  <img
+                  class="close_options_star_mobile"
+                  src="src/assets//images/star.png"
+                  alt="estrelinha"
+                  onclick="toggleMenu()"
+                                />
+                  <p id="home"><a href="#home">HOME</a></p>
+                  <p id="about"><a href="#about-us">SOBRE NÓS</a></p>
+                  <p id="customers"><a href="#cases">CLIENTES</a></p>
+                </div>
+              </div>
             </div>
+
+
+
+
+
+            
+
+
 
             <div id="menu_options" style="display: none">
               <img

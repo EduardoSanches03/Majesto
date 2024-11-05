@@ -1,0 +1,75 @@
+.menu-modal {
+  display: none; /* Inicia oculta */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  z-index: 10;
+}
+
+/* Parte semitransparente (esquerda) */
+.menu-modal .modal-left {
+  width: 50%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  float: left;
+  cursor: pointer; /* Fecha modal ao clicar */
+}
+
+/* Parte do menu (direita) */
+.menu-modal .modal-right {
+  width: 50%;
+  height: 100%;
+  background-color: black;
+  color: white;
+  float: right;
+  display: flex;
+  flex-direction: column;
+  align-items: normal;
+  justify-content: first baseline;
+}
+
+.itens-menu{
+  margin-top: 6vh;
+}
+
+.menu-modal .modal-right p {
+  font-size: 1.4em;
+  cursor: pointer;
+  margin-left: 10vw;
+  transition: transform 0.3s;
+}
+
+.menu-modal .modal-right p:hover {
+  transform: scale(1.1);
+}
+
+.menu-modal.fade-in {
+  display: flex;
+  animation: fadeIn 0.5s forwards;
+}
+
+.menu-modal.fade-out {
+  animation: fadeOut 0.5s forwards;
+}
+
+.close_options_star_mobile {
+  width: 8vw;
+  height: 4vh;
+  cursor: pointer;
+  position: relative;
+  left: 36vw;
+  top: 0;
+  animation: pulse 1.2s linear infinite;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
