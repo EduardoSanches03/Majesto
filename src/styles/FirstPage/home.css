@@ -68,9 +68,9 @@
   display: none;
   position: absolute;
   color: white;
-  top: 2vh;
-  right: 4vw;
-  font-size: 2em;
+  top: 4vh;
+  right: 6vw;
+  font-size: 2.4em;
   z-index: 6;
   cursor: pointer;
 }
@@ -239,18 +239,18 @@ a {
 
   #statue {
     width: 110vw;
-    height: 80vh;
+    height: 60vh;
     position: absolute;
     z-index: 2;
     left: 10vw;
-    top: 10vh;
+    top: 30vh;
   }
 
   #glitch_statue {
     position: absolute;
     width: 100vw;
-    height: 80vh;
-    top: 10.6vh;
+    height: 60vh;
+    top: 30vh;
     left: 12vw;
     z-index: 1;
   }
@@ -258,8 +258,8 @@ a {
   #glitch_statue_top {
     position: absolute;
     width: 100vw;
-    height: 80vh;
-    top: 10vh;
+    height: 60vh;
+    top: 30vh;
     left: 18vw;
     z-index: 3;
     --x-offset: 3;
