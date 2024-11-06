@@ -81,3 +81,62 @@
   bottom: -56%;
   animation: pulse 1.6s linear infinite;
 }
+
+@media (max-width: 480px) {
+  #pg3 {
+    margin-top: -10px;
+    font-family: "League Spartan", sans-serif;
+    font-weight: 300;
+    font-size: 26px;
+    color: white;
+    height: 100vh;
+    background-color: black;
+  }
+
+  .slogan-container{
+    background-color: white;
+    height: 60vh;
+  }
+
+  .content {
+    position: absolute;
+    left: 2%;
+    top: 60vh;
+    font-size: 1.2rem;
+  }
+
+  .content_2{
+    position: absolute;
+    left: 2%;
+    top: 80vh;
+    font-size: 1.2rem;
+  }
+
+  #text_line {
+    max-height: 100%;
+    width: 70vw;
+  }
+  
+  #text_star {
+    position: absolute;
+    height: 4vh;
+    width: 10vw;
+    left: 76vw;
+    bottom: -1.5vh;
+    animation: pulse 1.6s linear infinite;
+  }
+
+  #text_line2 {
+    max-height: 100%;
+    width: 70vw;
+  }
+  
+  #text_star2 {
+    position: absolute;
+    height: 4vh;
+    width: 10vw;
+    right: 76vw;
+    bottom: -1.5vh;
+    animation: pulse 1.6s linear infinite;
+  }
+}
